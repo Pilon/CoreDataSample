@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D212A2A115F42E6800DE79A5 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D212A2A015F42E6800DE79A5 /* SaveViewController.m */; };
 		D2F47DB615DB555B00E4549D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB515DB555B00E4549D /* UIKit.framework */; };
 		D2F47DB815DB555B00E4549D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB715DB555B00E4549D /* Foundation.framework */; };
 		D2F47DBA15DB555B00E4549D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB915DB555B00E4549D /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D212A29F15F42E6800DE79A5 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
+		D212A2A015F42E6800DE79A5 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		D2F47DB115DB555B00E4549D /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F47DB515DB555B00E4549D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F47DB715DB555B00E4549D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,8 @@
 				D2F47DC915DB555B00E4549D /* MainStoryboard.storyboard */,
 				D2F47DCC15DB555C00E4549D /* CoreDataSample.xcdatamodeld */,
 				D2F47DBE15DB555B00E4549D /* Supporting Files */,
+				D212A29F15F42E6800DE79A5 /* SaveViewController.h */,
+				D212A2A015F42E6800DE79A5 /* SaveViewController.m */,
 			);
 			path = CoreDataSample;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				D2F47DC415DB555B00E4549D /* main.m in Sources */,
 				D2F47DC815DB555B00E4549D /* AppDelegate.m in Sources */,
 				D2F47DCE15DB555C00E4549D /* CoreDataSample.xcdatamodeld in Sources */,
+				D212A2A115F42E6800DE79A5 /* SaveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

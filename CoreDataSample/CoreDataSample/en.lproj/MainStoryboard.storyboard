@@ -6,22 +6,83 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Salvar-->
+        <!--Save View Controller - Save-->
         <scene sceneID="aO4-63-eDb">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sT-wd-wvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="ETl-EU-Z70" sceneMemberID="viewController">
+                <viewController id="ETl-EU-Z70" customClass="SaveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zum-zH-ieE">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LH7-gq-sbg">
+                                <rect key="frame" x="20" y="20" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YpW-wT-wav">
+                                <rect key="frame" x="20" y="49" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ca1-nQ-OQA">
+                                <rect key="frame" x="20" y="88" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="AWM-eb-p8u">
+                                <rect key="frame" x="20" y="162" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Mim-RQ-VZS">
+                                <rect key="frame" x="20" y="117" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8vo-ea-JO1">
+                                <rect key="frame" x="20" y="190" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c6S-fe-L1Q">
+                                <rect key="frame" x="124" y="354" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="ETl-EU-Z70" eventType="touchUpInside" id="KzD-EO-O9l"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Salvar" id="1Wi-zF-YiU"/>
+                    <tabBarItem key="tabBarItem" title="Save" id="1Wi-zF-YiU"/>
+                    <connections>
+                        <outlet property="address" destination="8vo-ea-JO1" id="FEE-mI-XMO"/>
+                        <outlet property="age" destination="Mim-RQ-VZS" id="c0X-h7-hmh"/>
+                        <outlet property="name" destination="YpW-wT-wav" id="VoP-U0-qob"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="687" y="568"/>
         </scene>
-        <!--View Controller - Lista-->
+        <!--View Controller - List-->
         <scene sceneID="QBq-5b-Qa6">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLX-9h-EIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,7 +110,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Lista" id="i1X-eo-Czb"/>
+                    <tabBarItem key="tabBarItem" title="List" id="i1X-eo-Czb"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="687" y="4"/>
@@ -74,6 +135,17 @@
             <point key="canvasLocation" x="153" y="285"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="SaveViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SaveViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="address" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="age" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
