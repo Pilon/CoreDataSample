@@ -16,8 +16,6 @@
 		D2F47DC815DB555B00E4549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F47DC715DB555B00E4549D /* AppDelegate.m */; };
 		D2F47DCB15DB555B00E4549D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F47DC915DB555B00E4549D /* MainStoryboard.storyboard */; };
 		D2F47DCE15DB555C00E4549D /* CoreDataSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2F47DCC15DB555C00E4549D /* CoreDataSample.xcdatamodeld */; };
-		D2F47DD115DB555C00E4549D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F47DD015DB555C00E4549D /* MasterViewController.m */; };
-		D2F47DD415DB555C00E4549D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F47DD315DB555C00E4549D /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +32,6 @@
 		D2F47DC715DB555B00E4549D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2F47DCA15DB555B00E4549D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D2F47DCD15DB555C00E4549D /* CoreDataSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSample.xcdatamodel; sourceTree = "<group>"; };
-		D2F47DCF15DB555C00E4549D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		D2F47DD015DB555C00E4549D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D2F47DD215DB555C00E4549D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D2F47DD315DB555C00E4549D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +83,6 @@
 				D2F47DC615DB555B00E4549D /* AppDelegate.h */,
 				D2F47DC715DB555B00E4549D /* AppDelegate.m */,
 				D2F47DC915DB555B00E4549D /* MainStoryboard.storyboard */,
-				D2F47DCF15DB555C00E4549D /* MasterViewController.h */,
-				D2F47DD015DB555C00E4549D /* MasterViewController.m */,
-				D2F47DD215DB555C00E4549D /* DetailViewController.h */,
-				D2F47DD315DB555C00E4549D /* DetailViewController.m */,
 				D2F47DCC15DB555C00E4549D /* CoreDataSample.xcdatamodeld */,
 				D2F47DBE15DB555B00E4549D /* Supporting Files */,
 			);
@@ -175,8 +165,6 @@
 				D2F47DC415DB555B00E4549D /* main.m in Sources */,
 				D2F47DC815DB555B00E4549D /* AppDelegate.m in Sources */,
 				D2F47DCE15DB555C00E4549D /* CoreDataSample.xcdatamodeld in Sources */,
-				D2F47DD115DB555C00E4549D /* MasterViewController.m in Sources */,
-				D2F47DD415DB555C00E4549D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +276,7 @@
 				D2F47DD915DB555C00E4549D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
