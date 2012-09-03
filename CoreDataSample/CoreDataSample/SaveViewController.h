@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SaveViewController : UIViewController
+@interface SaveViewController : UIViewController <UITextFieldDelegate>
 {
     __weak IBOutlet UITextField *name;
     __weak IBOutlet UITextField *age;

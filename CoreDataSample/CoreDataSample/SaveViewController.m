@@ -7,13 +7,18 @@
 //
 
 #import "SaveViewController.h"
+#import "Contact.h"
+#import "AppDelegate.h"
 
 @interface SaveViewController ()
+
+@property (nonatomic, weak) NSManagedObjectContext *context;
 
 @end
 
 @implementation SaveViewController
 
+@synthesize context = _context;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +32,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
+}
+
+-(NSManagedObjectContext *)context{
+    if(!_context){
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _context = appDelegate.managedObjectContext;
+    }
+    return _context;
 }
 
 - (void)viewDidUnload
@@ -35,6 +49,7 @@
     name = nil;
     age = nil;
     address = nil;
+    _context = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -45,6 +60,23 @@
 }
 
 - (IBAction)save:(id)sender {
+    Contact *contact = [NSEntityDescription
+                        insertNewObjectForEntityForName:@"Contact"
+                        inManagedObjectContext:self.context];
+    contact.name = name.text;
+    contact.age  = [NSNumber numberWithInt:[age.text intValue]];
+    contact.address = address.text;
     
+    NSError *error;
+    if (![self.context save:&error]) {
+        NSLog(@"Error saving contact: %@", [error localizedDescription]);
+    }
 }
+
+#pragma mark UITextViewDelegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return [textField resignFirstResponder];
+}
+
 @end
