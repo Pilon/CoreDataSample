@@ -19,7 +19,7 @@
 
 @synthesize context = _context;
 
--(NSManagedObjectContext *)context{
+- (NSManagedObjectContext *)context{
     if(!_context){
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         _context = appDelegate.managedObjectContext;
@@ -43,6 +43,23 @@
     } else {
         return TRUE;
     }
+}
+
+- (NSArray *)getContacts
+{
+    NSMutableArray *contacts = [[NSMutableArray alloc] init];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Contact" inManagedObjectContext:self.context];
+    
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [self.context executeFetchRequest:fetchRequest error:nil];
+    for (Contact *contact in fetchedObjects) {
+        [contacts addObject:contact];
+    }
+    
+    return contacts;
 }
 
 @end

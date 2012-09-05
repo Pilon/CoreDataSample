@@ -10,6 +10,7 @@
 		D212A2A115F42E6800DE79A5 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D212A2A015F42E6800DE79A5 /* SaveViewController.m */; };
 		D212A2A815F4602600DE79A5 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = D212A2A715F4602600DE79A5 /* Contact.m */; };
 		D212A30915F5A97200DE79A5 /* ContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D212A30815F5A97200DE79A5 /* ContactDAO.m */; };
+		D27938BC15F6FB3200A340D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27938BB15F6FB3200A340D9 /* ListViewController.m */; };
 		D2F47DB615DB555B00E4549D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB515DB555B00E4549D /* UIKit.framework */; };
 		D2F47DB815DB555B00E4549D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB715DB555B00E4549D /* Foundation.framework */; };
 		D2F47DBA15DB555B00E4549D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F47DB915DB555B00E4549D /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 		D212A2A715F4602600DE79A5 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		D212A30715F5A97200DE79A5 /* ContactDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDAO.h; sourceTree = "<group>"; };
 		D212A30815F5A97200DE79A5 /* ContactDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDAO.m; sourceTree = "<group>"; };
+		D27938BA15F6FB3200A340D9 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		D27938BB15F6FB3200A340D9 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		D2F47DB115DB555B00E4549D /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F47DB515DB555B00E4549D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F47DB715DB555B00E4549D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,10 +64,31 @@
 		D212A30515F5A95E00DE79A5 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				D2F47DCC15DB555C00E4549D /* CoreDataSample.xcdatamodeld */,
 				D212A30715F5A97200DE79A5 /* ContactDAO.h */,
 				D212A30815F5A97200DE79A5 /* ContactDAO.m */,
 			);
 			name = DAO;
+			sourceTree = "<group>";
+		};
+		D27938B015F6F3C200A340D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D212A2A615F4602600DE79A5 /* Contact.h */,
+				D212A2A715F4602600DE79A5 /* Contact.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D27938B215F6F65E00A340D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D212A29F15F42E6800DE79A5 /* SaveViewController.h */,
+				D212A2A015F42E6800DE79A5 /* SaveViewController.m */,
+				D27938BA15F6FB3200A340D9 /* ListViewController.h */,
+				D27938BB15F6FB3200A340D9 /* ListViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D2F47DA615DB555B00E4549D = {
@@ -98,16 +122,13 @@
 		D2F47DBD15DB555B00E4549D /* CoreDataSample */ = {
 			isa = PBXGroup;
 			children = (
+				D27938B215F6F65E00A340D9 /* ViewControllers */,
+				D27938B015F6F3C200A340D9 /* Model */,
 				D212A30515F5A95E00DE79A5 /* DAO */,
 				D2F47DC615DB555B00E4549D /* AppDelegate.h */,
 				D2F47DC715DB555B00E4549D /* AppDelegate.m */,
 				D2F47DC915DB555B00E4549D /* MainStoryboard.storyboard */,
-				D212A2A615F4602600DE79A5 /* Contact.h */,
-				D212A2A715F4602600DE79A5 /* Contact.m */,
-				D2F47DCC15DB555C00E4549D /* CoreDataSample.xcdatamodeld */,
 				D2F47DBE15DB555B00E4549D /* Supporting Files */,
-				D212A29F15F42E6800DE79A5 /* SaveViewController.h */,
-				D212A2A015F42E6800DE79A5 /* SaveViewController.m */,
 			);
 			path = CoreDataSample;
 			sourceTree = "<group>";
@@ -191,6 +212,7 @@
 				D212A2A115F42E6800DE79A5 /* SaveViewController.m in Sources */,
 				D212A2A815F4602600DE79A5 /* Contact.m in Sources */,
 				D212A30915F5A97200DE79A5 /* ContactDAO.m in Sources */,
+				D27938BC15F6FB3200A340D9 /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

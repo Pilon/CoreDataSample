@@ -12,5 +12,6 @@
 @interface ContactDAO : NSObject
 
 - (BOOL)save:(NSDictionary *)dictionary;
+- (NSArray *)getContacts;
 
 @end
